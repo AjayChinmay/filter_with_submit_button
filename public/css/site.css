@@ -1,0 +1,56 @@
+.common_filter_sub
+{
+    margin: 0 10px;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button
+{
+    padding: 2px;
+}
+.button_style
+{
+    margin-top: 35px;
+}
+
+/*Hidden class for adding and removing*/
+.lds-dual-ring.hidden {
+    display: none;
+}
+
+/*Add an overlay to the entire page blocking any further presses to buttons or other elements.*/
+.overlay {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100vh;
+    background: none;
+    z-index: 999;
+    opacity: 1;
+    transition: all 0.5s;
+}
+ 
+/*Spinner Styles*/
+.lds-dual-ring {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+}
+.lds-dual-ring:after {
+    content: " ";
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin: 5% auto;
+    border-radius: 50%;
+    border: 6px solid #fff;
+    border-color: #877ce2 transparent #877ce2 transparent;
+    animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
